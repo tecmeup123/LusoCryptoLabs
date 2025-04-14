@@ -1,0 +1,31 @@
+One-Pager Prompt for LusocryptoLabs
+Create a dynamic, modern one-pager for LusocryptoLabs, a venture by three enthusiasts dedicated to promoting the Nervos Network ecosystem. The design should be visually engaging, with a clean layout and a professional yet approachable tone. Below are the details to include:
+Overview  
+Who We Are: LusocryptoLabs is a team of three passionate innovators building tools and activities to advance the Nervos Network.  
+Mission: Drive adoption and growth of the Nervos ecosystem through decentralized applications (dApps) and community-focused initiatives.  
+Vision: Empower users with accessible, cutting-edge solutions that showcase the power of Nervos Network.
+Our Products  
+Token Minter dApp  
+An upcoming dApp enabling users to mint custom tokens on Nervos Network.  
+Include a prominent button linking to: dapp.sitaminter.xyz (note: ensure link is active upon launch).  
+Highlight its role as a foundational tool for token creation.
+Gamified Community Bot  
+A recently launched bot in the Telmo Talks community, rewarding user interactions with points.  
+Points are redeemable for native Nervos tokens in the future.  
+Emphasize its gamification approach to boost engagement and its active status.
+DOB Minter  
+A forthcoming dApp for minting Digital Objects (DOBs), Nervos’ advanced alternative to NFTs.  
+Note its status as in development and its potential to redefine digital assets.
+Future Pipeline  
+Mention additional innovative products in development, teasing ongoing growth without specific details.
+Roadmap  
+April 2025: Launch of the Token Minter dApp (by end of April).  
+Q3 2025: Launch of the Gamified Bot in Telmo Talks (completed).  
+May 2025: Launch of the DOB Minter (by end of May).  
+2026 & Beyond: Development and launch of pipeline projects.
+Design Requirements  
+Style: Modern, sleek, with bold colors inspired by Web3 aesthetics (e.g., gradients, neons, or minimalist dark themes).  
+Layout: Clear sections for Overview, Products, and Roadmap. Use icons or visuals to break up text.  
+Roadmap Visual: Include a timeline graphic to illustrate key milestones, marking completed and upcoming stages.  
+Call to Action: Ensure the Token Minter link is a clickable, standout button (with a note to activate post-launch if not yet live).
+The one-pager should feel exciting and forward-looking, reflecting LusocryptoLabs’ role as a trailblazer in the Nervos Network ecosystem, with emphasis on our active bot and imminent product launches.
