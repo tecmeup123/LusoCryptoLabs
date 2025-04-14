@@ -49,7 +49,7 @@ const RoadmapItem = ({
 
 const RoadmapSection = () => {
   return (
-    <section id="roadmap" className="py-20 bg-black relative overflow-hidden">
+    <section id="roadmap" className="py-20 bg-black relative overflow-hidden border-t border-b border-[#8b0000]">
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#0f0f0f] to-transparent"></div>
       
       <div className="container mx-auto px-4">

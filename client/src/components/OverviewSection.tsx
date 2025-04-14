@@ -33,7 +33,7 @@ const OverviewCard = ({
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="py-20 bg-black">
+    <section id="overview" className="py-20 bg-black border-t border-b border-[#8b0000]">
       <div className="container mx-auto px-4">
         <motion.div 
           className="max-w-4xl mx-auto text-center mb-16"

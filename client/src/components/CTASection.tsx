@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-black relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden border-t border-b border-white">
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#0f0f0f] to-transparent"></div>
       
       <div className="container mx-auto px-4 relative z-10">
