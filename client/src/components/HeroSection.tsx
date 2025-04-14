@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black opacity-90"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1f0000] to-black opacity-80"></div>
         <motion.div 
-          className="absolute top-0 right-0 w-3/4 h-3/4 bg-[#ff1a1a] opacity-10 blur-3xl rounded-full transform translate-x-1/4 -translate-y-1/4"
+          className="absolute top-0 right-0 w-3/4 h-3/4 bg-[#8b0000] opacity-10 blur-3xl rounded-full transform translate-x-1/4 -translate-y-1/4"
           animate={{ 
             scale: [1, 1.1, 1],
             opacity: [0.1, 0.15, 0.1] 
@@ -44,7 +44,7 @@ const HeroSection = () => {
           >
             <h1 className="font-['Orbitron'] font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
               Advancing the{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff1a1a] to-[#ff5252]">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#8b0000] to-[#a52a2a]">
                 Nervos Network
               </span>{" "}
               Ecosystem
@@ -55,7 +55,7 @@ const HeroSection = () => {
             <div className="pt-4">
               <motion.a 
                 href="#products"
-                className="inline-block px-8 py-4 bg-black border-2 border-[#ff1a1a] rounded-lg font-medium text-[#ff1a1a] hover:bg-[#ff1a1a] hover:text-white transition-all duration-300 shadow-lg shadow-[#ff1a1a]/20"
+                className="inline-block px-8 py-4 bg-black border-2 border-[#8b0000] rounded-lg font-medium text-[#8b0000] hover:bg-[#8b0000] hover:text-white transition-all duration-300 shadow-lg shadow-[#8b0000]/20"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -79,11 +79,11 @@ const HeroSection = () => {
                 ease: "easeInOut"
               }}
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#ff1a1a] to-white opacity-20 blur-xl rounded-full"></div>
-              <div className="relative p-6 backdrop-blur-sm bg-black bg-opacity-50 rounded-2xl border border-white/10 before:absolute before:inset-[-2px] before:bg-gradient-to-r before:from-[#ff1a1a] before:to-white before:rounded-2xl before:-z-10">
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#8b0000] to-white opacity-20 blur-xl rounded-full"></div>
+              <div className="relative p-6 backdrop-blur-sm bg-black bg-opacity-50 rounded-2xl border border-white/10 before:absolute before:inset-[-2px] before:bg-gradient-to-r before:from-[#8b0000] before:to-white before:rounded-2xl before:-z-10">
                 <div className="text-center p-8">
                   <div className="inline-block p-4 bg-black rounded-full mb-6">
-                    <i className="ph ph-plugs-connected text-5xl text-[#ff1a1a]"></i>
+                    <i className="ph ph-plugs-connected text-5xl text-[#8b0000]"></i>
                   </div>
                   <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Community Contribution</h3>
                   <p className="text-gray-300">
