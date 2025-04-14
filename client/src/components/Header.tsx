@@ -19,9 +19,9 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <h1 className="font-['Orbitron'] font-bold text-2xl md:text-3xl">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#8b0000] to-[#a52a2a]">Luso</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#784DFD]">Luso</span>
             <span className="text-white">crypto</span>
-            <span className="text-white">Labs</span>
+            <span className="text-[#3CC68A]">Labs</span>
           </h1>
         </div>
 
@@ -29,17 +29,17 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
             <li>
-              <a href="#overview" className="hover:text-[#8b0000] transition-colors">
+              <a href="#overview" className="hover:text-[#00FFFF] transition-colors">
                 Overview
               </a>
             </li>
             <li>
-              <a href="#products" className="hover:text-[#8b0000] transition-colors">
+              <a href="#products" className="hover:text-[#00FFFF] transition-colors">
                 Products
               </a>
             </li>
             <li>
-              <a href="#roadmap" className="hover:text-[#8b0000] transition-colors">
+              <a href="#roadmap" className="hover:text-[#00FFFF] transition-colors">
                 Roadmap
               </a>
             </li>
@@ -58,7 +58,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-black absolute w-full border-b border-white/10 transition-all duration-300 ${
+        className={`md:hidden bg-[#152747] absolute w-full border-b border-white/10 transition-all duration-300 ${
           mobileMenuOpen ? "block" : "hidden"
         }`}
       >
@@ -66,7 +66,7 @@ const Header = () => {
           <li>
             <a 
               href="#overview" 
-              className="block py-2 hover:text-[#8b0000] transition-colors"
+              className="block py-2 hover:text-[#00FFFF] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Overview
@@ -75,7 +75,7 @@ const Header = () => {
           <li>
             <a 
               href="#products" 
-              className="block py-2 hover:text-[#8b0000] transition-colors"
+              className="block py-2 hover:text-[#00FFFF] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Products
@@ -84,7 +84,7 @@ const Header = () => {
           <li>
             <a 
               href="#roadmap" 
-              className="block py-2 hover:text-[#8b0000] transition-colors"
+              className="block py-2 hover:text-[#00FFFF] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Roadmap
