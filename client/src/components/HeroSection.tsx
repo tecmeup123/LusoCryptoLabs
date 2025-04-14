@@ -65,7 +65,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="relative"
+            className="relative hidden lg:block"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -83,11 +83,11 @@ const HeroSection = () => {
               <div className="relative p-6 backdrop-blur-sm bg-[#152747] bg-opacity-50 rounded-2xl border border-white/10 before:absolute before:inset-[-2px] before:bg-gradient-to-r before:from-[#00FFFF] before:to-[#784DFD] before:rounded-2xl before:-z-10">
                 <div className="text-center p-8">
                   <div className="inline-block p-4 bg-[#060D20] rounded-full mb-6">
-                    <i className="ph ph-plugs-connected text-5xl text-[#3CC68A]"></i>
+                    <i className="ph ph-rocket-launch text-5xl text-[#3CC68A]"></i>
                   </div>
-                  <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Community Contribution</h3>
+                  <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">LusocryptoLabs</h3>
                   <p className="text-gray-300">
-                    Supporting users with helpful tools that promote the potential of Nervos Network.
+                    Building tools with passion for the Nervos Network community.
                   </p>
                 </div>
               </div>
