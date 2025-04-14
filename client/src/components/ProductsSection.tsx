@@ -33,7 +33,7 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <motion.div 
-      className="bg-black rounded-2xl overflow-hidden border border-white/10 hover:border-[#ff1a1a]/30 transition-all duration-300 shadow-xl"
+      className="bg-black rounded-2xl overflow-hidden border border-white/10 hover:border-[#8b0000]/50 transition-all duration-300 shadow-xl"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -74,7 +74,7 @@ const ProductCard = ({
             rel="noopener noreferrer" 
             className="block w-full py-3 gradient-border rounded-lg"
           >
-            <div className="bg-black hover:bg-[#1a1a1a] transition-colors duration-300 text-center py-3 px-6 rounded-lg font-medium border border-[#ff1a1a]">
+            <div className="bg-black hover:bg-[#1a1a1a] transition-colors duration-300 text-center py-3 px-6 rounded-lg font-medium border border-[#8b0000]">
               {actionText}
             </div>
           </a>
@@ -99,7 +99,7 @@ const ProductsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Our Products</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#ff1a1a] to-[#ff5252] mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#8b0000] to-[#a52a2a] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Community-made tools designed to help the Nervos Network ecosystem grow
           </p>
@@ -112,11 +112,11 @@ const ProductsSection = () => {
             description="A simple web tool that lets anyone create their own custom tokens on Nervos Network using JoyID or UTXO Global wallets. Uses RGB++ standard and supports multiple languages for the community."
             status="coming-soon"
             statusText="Coming Soon"
-            gradientFrom="[#ff1a1a]"
-            gradientTo="[#ff5252]"
-            iconColor="text-[#ff1a1a]"
-            statusBgColor="bg-[#ff1a1a]/10"
-            statusTextColor="text-[#ff1a1a]"
+            gradientFrom="[#8b0000]"
+            gradientTo="[#a52a2a]"
+            iconColor="text-[#8b0000]"
+            statusBgColor="bg-[#8b0000]/10"
+            statusTextColor="text-[#8b0000]"
             actionText="Visit Token Minter"
             actionLink="https://dapp.sitaminter.xyz"
           />
@@ -144,16 +144,16 @@ const ProductsSection = () => {
             statusText="In Development"
             gradientFrom="black"
             gradientTo="#333"
-            iconColor="text-[#ff1a1a]"
-            statusBgColor="bg-[#ff1a1a]/10"
-            statusTextColor="text-[#ff1a1a]"
+            iconColor="text-[#8b0000]"
+            statusBgColor="bg-[#8b0000]/10"
+            statusTextColor="text-[#8b0000]"
             actionText="Coming May 2025"
             isDisabled={true}
           />
         </div>
 
         <motion.div 
-          className="mt-16 bg-black rounded-2xl p-8 border border-[#ff1a1a]/20"
+          className="mt-16 bg-black rounded-2xl p-8 border border-[#8b0000]/20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

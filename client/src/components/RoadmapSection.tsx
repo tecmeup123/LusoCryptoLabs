@@ -61,14 +61,14 @@ const RoadmapSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Roadmap</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#ff1a1a] to-[#ff5252] mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#8b0000] to-[#a52a2a] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Our journey as enthusiasts supporting the Nervos Network ecosystem
           </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto mt-16 relative">
-          <div className="h-full w-2 bg-gradient-to-b from-[#ff1a1a] via-white to-black absolute left-[15px] top-0"></div>
+          <div className="h-full w-2 bg-gradient-to-b from-[#8b0000] via-white to-black absolute left-[15px] top-0"></div>
           
           <RoadmapItem
             title="Gamified Bot in Telmo Talks"
@@ -87,10 +87,10 @@ const RoadmapSection = () => {
             date="April 2025"
             description="Working on a simple tool to help community members create tokens on Nervos Network with a friendly interface anyone can use."
             status="in-progress"
-            iconColor="bg-[#ff1a1a]"
+            iconColor="bg-[#8b0000]"
             icon="ph-hourglass"
-            dateBgColor="bg-[#ff1a1a]/10"
-            dateTextColor="text-[#ff1a1a]"
+            dateBgColor="bg-[#8b0000]/10"
+            dateTextColor="text-[#8b0000]"
             index={1}
           />
           
