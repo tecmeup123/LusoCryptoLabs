@@ -33,7 +33,7 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <motion.div 
-      className="bg-[#152747] rounded-2xl overflow-hidden border border-white/10 hover:border-[#00FFFF]/30 transition-all duration-300 shadow-xl"
+      className="bg-black rounded-2xl overflow-hidden border border-white/10 hover:border-[#ff1a1a]/30 transition-all duration-300 shadow-xl"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -63,7 +63,7 @@ const ProductCard = ({
             href={actionLink} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="block w-full py-3 text-center bg-[#3CC68A] text-[#0A1128] font-medium rounded-lg hover:bg-[#2A9D6A] transition-colors duration-300"
+            className="block w-full py-3 text-center bg-white text-black font-medium rounded-lg hover:bg-gray-200 transition-colors duration-300"
           >
             {actionText}
           </a>
@@ -74,7 +74,7 @@ const ProductCard = ({
             rel="noopener noreferrer" 
             className="block w-full py-3 gradient-border rounded-lg"
           >
-            <div className="bg-[#060D20] hover:bg-[#152747] transition-colors duration-300 text-center py-3 px-6 rounded-lg font-medium">
+            <div className="bg-black hover:bg-[#1a1a1a] transition-colors duration-300 text-center py-3 px-6 rounded-lg font-medium border border-[#ff1a1a]">
               {actionText}
             </div>
           </a>
@@ -99,7 +99,7 @@ const ProductsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Our Products</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#ff1a1a] to-[#ff5252] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Community-made tools designed to help the Nervos Network ecosystem grow
           </p>
@@ -112,11 +112,11 @@ const ProductsSection = () => {
             description="A simple web tool that lets anyone create their own custom tokens on Nervos Network using JoyID or UTXO Global wallets. Uses RGB++ standard and supports multiple languages for the community."
             status="coming-soon"
             statusText="Coming Soon"
-            gradientFrom="[#00FFFF]"
-            gradientTo="[#784DFD]"
-            iconColor="text-[#00FFFF]"
-            statusBgColor="bg-[#00FFFF]/10"
-            statusTextColor="text-[#00FFFF]"
+            gradientFrom="[#ff1a1a]"
+            gradientTo="[#ff5252]"
+            iconColor="text-[#ff1a1a]"
+            statusBgColor="bg-[#ff1a1a]/10"
+            statusTextColor="text-[#ff1a1a]"
             actionText="Visit Token Minter"
             actionLink="https://dapp.sitaminter.xyz"
           />
@@ -127,11 +127,11 @@ const ProductsSection = () => {
             description="A recently launched bot in the Telmo Talks community, rewarding user interactions with points redeemable for native Nervos tokens."
             status="active"
             statusText="Active"
-            gradientFrom="[#3CC68A]" 
-            gradientTo="[#784DFD]"
-            iconColor="text-[#3CC68A]"
-            statusBgColor="bg-[#3CC68A]/10"
-            statusTextColor="text-[#3CC68A]"
+            gradientFrom="white" 
+            gradientTo="white"
+            iconColor="text-white"
+            statusBgColor="bg-white/10"
+            statusTextColor="text-white"
             actionText="Join Community"
             actionLink="https://t.me/telmotalks"
           />
@@ -142,18 +142,18 @@ const ProductsSection = () => {
             description="A fan project in progress to simplify minting Digital Objects (DOBs), Nervos' alternative to NFTs, making it accessible to more users."
             status="in-development"
             statusText="In Development"
-            gradientFrom="[#784DFD]"
-            gradientTo="[#FF3DCD]"
-            iconColor="text-[#784DFD]"
-            statusBgColor="bg-[#784DFD]/10"
-            statusTextColor="text-[#784DFD]"
+            gradientFrom="black"
+            gradientTo="#333"
+            iconColor="text-[#ff1a1a]"
+            statusBgColor="bg-[#ff1a1a]/10"
+            statusTextColor="text-[#ff1a1a]"
             actionText="Coming May 2025"
             isDisabled={true}
           />
         </div>
 
         <motion.div 
-          className="mt-16 bg-[#152747]/50 rounded-2xl p-8 border border-white/10"
+          className="mt-16 bg-black rounded-2xl p-8 border border-[#ff1a1a]/20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
