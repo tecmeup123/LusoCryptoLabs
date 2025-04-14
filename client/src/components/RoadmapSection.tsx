@@ -63,7 +63,7 @@ const RoadmapSection = () => {
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Roadmap</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Our modest journey as enthusiasts supporting the Nervos Network ecosystem
+            Our journey as enthusiasts supporting the Nervos Network ecosystem
           </p>
         </motion.div>
 
