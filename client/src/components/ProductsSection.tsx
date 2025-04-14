@@ -61,6 +61,8 @@ const ProductCard = ({
         ) : status === 'active' ? (
           <a 
             href={actionLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="block w-full py-3 text-center bg-[#3CC68A] text-[#0A1128] font-medium rounded-lg hover:bg-[#2A9D6A] transition-colors duration-300"
           >
             {actionText}
