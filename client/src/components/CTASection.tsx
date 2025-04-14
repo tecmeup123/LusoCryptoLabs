@@ -15,9 +15,9 @@ const CTASection = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-[#00FFFF]/10 to-[#784DFD]/10"></div>
           <div className="relative z-10 p-8 text-center">
-            <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Join the Nervos Network Revolution</h2>
+            <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Join the Nervos Network Community</h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Be among the first to experience our groundbreaking tools and applications for the Nervos ecosystem.
+              Try out our simple community tools and be part of the growing Nervos ecosystem with us.
             </p>
             <motion.a
               href="https://dapp.sitaminter.xyz"

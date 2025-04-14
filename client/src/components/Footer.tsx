@@ -9,7 +9,7 @@ const Footer = () => {
               <span className="text-white">crypto</span>
               <span className="text-[#3CC68A]">Labs</span>
             </h2>
-            <p className="text-gray-400">Advancing the Nervos Network Ecosystem</p>
+            <p className="text-gray-400">Supporting the Nervos Network Community</p>
           </div>
           <div className="flex space-x-6">
             <a href="https://t.me/telmotalks" className="text-gray-400 hover:text-[#00FFFF] transition-colors">
