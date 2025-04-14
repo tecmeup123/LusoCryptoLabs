@@ -45,7 +45,7 @@ const OverviewSection = () => {
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Who We Are</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 leading-relaxed">
-            LusocryptoLabs is a team of three passionate innovators building tools and activities to advance the Nervos Network. Our mission is to drive adoption and growth of the Nervos ecosystem through decentralized applications (dApps) and community-focused initiatives.
+            LusocryptoLabs is a team of three passionate enthusiasts creating tools and activities to support the Nervos Network. Our goal is to help grow the Nervos ecosystem through simple community tools and engaging initiatives.
           </p>
         </motion.div>
 
@@ -54,19 +54,19 @@ const OverviewSection = () => {
             icon="ph-rocket-launch"
             iconColor="text-[#00FFFF]"
             title="Mission"
-            description="Drive adoption and growth of the Nervos ecosystem through decentralized applications and community-focused initiatives."
+            description="Contribute to the growth of the Nervos ecosystem through community tools and fan-created initiatives."
           />
           <OverviewCard
             icon="ph-eye"
             iconColor="text-[#784DFD]"
             title="Vision"
-            description="Empower users with accessible, cutting-edge solutions that showcase the power of Nervos Network."
+            description="Help more users discover and enjoy the Nervos Network through accessible community-built tools."
           />
           <OverviewCard
             icon="ph-chart-line-up"
             iconColor="text-[#3CC68A]"
             title="Growth"
-            description="Building a sustainable ecosystem of products and services to support Nervos Network's expansion."
+            description="Encouraging community participation and education to support Nervos Network's adoption."
           />
         </div>
       </div>

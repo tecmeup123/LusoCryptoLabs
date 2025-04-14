@@ -50,7 +50,7 @@ const HeroSection = () => {
               Ecosystem
             </h1>
             <p className="text-xl md:text-2xl text-gray-300">
-              Building innovative tools and applications to drive adoption and growth of Nervos Network.
+              Enthusiasts creating community tools to support and promote the growth of Nervos Network.
             </p>
             <div className="pt-4">
               <motion.a 
@@ -85,9 +85,9 @@ const HeroSection = () => {
                   <div className="inline-block p-4 bg-[#060D20] rounded-full mb-6">
                     <i className="ph ph-plugs-connected text-5xl text-[#3CC68A]"></i>
                   </div>
-                  <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Web3 Innovation</h3>
+                  <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Community Contribution</h3>
                   <p className="text-gray-300">
-                    Empowering users with accessible, cutting-edge solutions that showcase the power of Nervos Network.
+                    Supporting users with helpful tools that promote the potential of Nervos Network.
                   </p>
                 </div>
               </div>

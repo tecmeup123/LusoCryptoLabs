@@ -101,7 +101,7 @@ const ProductsSection = () => {
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Our Products</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Innovative solutions designed to enhance the Nervos Network ecosystem
+            Community-made tools designed to help the Nervos Network ecosystem grow
           </p>
         </motion.div>
 
@@ -109,7 +109,7 @@ const ProductsSection = () => {
           <ProductCard
             icon="ph-coins"
             title="Token Minter dApp"
-            description="An upcoming dApp enabling users to mint custom tokens on Nervos Network. A foundational tool for token creation in the ecosystem."
+            description="An upcoming simple tool to help users mint custom tokens on Nervos Network. A community contribution to make token creation easier."
             status="coming-soon"
             statusText="Coming Soon"
             gradientFrom="[#00FFFF]"
@@ -139,7 +139,7 @@ const ProductsSection = () => {
           <ProductCard
             icon="ph-cube"
             title="DOB Minter"
-            description="A forthcoming dApp for minting Digital Objects (DOBs), Nervos' advanced alternative to NFTs, redefining digital assets."
+            description="A fan project in progress to simplify minting Digital Objects (DOBs), Nervos' alternative to NFTs, making it accessible to more users."
             status="in-development"
             statusText="In Development"
             gradientFrom="[#784DFD]"
@@ -159,9 +159,9 @@ const ProductsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Future Pipeline</h3>
+          <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Future Plans</h3>
           <p className="text-gray-300">
-            Our team is actively developing additional innovative products to further expand the Nervos Network ecosystem. Stay tuned for announcements on groundbreaking tools and applications coming soon.
+            Our small team is working on more helpful community tools to support the Nervos Network ecosystem. Stay tuned for updates on new projects we're creating as enthusiasts.
           </p>
         </motion.div>
       </div>
