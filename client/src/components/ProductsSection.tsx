@@ -109,7 +109,7 @@ const ProductsSection = () => {
           <ProductCard
             icon="ph-coins"
             title="Token Minter dApp"
-            description="An upcoming simple tool to help users mint custom tokens on Nervos Network. A community contribution to make token creation easier."
+            description="A simple web tool that lets anyone create their own custom tokens on Nervos Network using JoyID wallet. Uses RGB++ standard and supports multiple languages. Requires 500 CKB to mint tokens."
             status="coming-soon"
             statusText="Coming Soon"
             gradientFrom="[#00FFFF]"
