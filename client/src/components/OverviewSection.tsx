@@ -52,19 +52,19 @@ const OverviewSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <OverviewCard
             icon="ph-rocket-launch"
-            iconColor="text-[#00FFFF]"
+            iconColor="text-[#ff1a1a]"
             title="Mission"
             description="Contribute to the growth of the Nervos ecosystem through community tools and fan-created initiatives."
           />
           <OverviewCard
             icon="ph-eye"
-            iconColor="text-[#784DFD]"
+            iconColor="text-white"
             title="Vision"
             description="Help more users discover and enjoy the Nervos Network through accessible community-built tools."
           />
           <OverviewCard
             icon="ph-chart-line-up"
-            iconColor="text-[#3CC68A]"
+            iconColor="text-black"
             title="Growth"
             description="Encouraging community participation and education to support Nervos Network's adoption."
           />
