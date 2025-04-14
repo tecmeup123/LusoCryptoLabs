@@ -63,7 +63,7 @@ const RoadmapSection = () => {
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Roadmap</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Our journey towards advancing the Nervos Network ecosystem
+            Our modest journey as enthusiasts supporting the Nervos Network ecosystem
           </p>
         </motion.div>
 
@@ -73,7 +73,7 @@ const RoadmapSection = () => {
           <RoadmapItem
             title="Gamified Bot in Telmo Talks"
             date="Q3 2025 - Completed"
-            description="Successfully launched our gamified community bot in the Telmo Talks community, rewarding user engagement with points redeemable for Nervos tokens."
+            description="Created a simple community bot for Telmo Talks that rewards members for chatting with points they can exchange for Nervos tokens."
             status="completed"
             iconColor="bg-[#3CC68A]"
             icon="ph-check-bold"
@@ -85,7 +85,7 @@ const RoadmapSection = () => {
           <RoadmapItem
             title="Token Minter dApp Launch"
             date="April 2025"
-            description="Launch of our Token Minter dApp, enabling users to create custom tokens on the Nervos Network with an intuitive interface."
+            description="Working on a simple tool to help community members create tokens on Nervos Network with a friendly interface anyone can use."
             status="in-progress"
             iconColor="bg-[#00FFFF]"
             icon="ph-hourglass"
@@ -97,7 +97,7 @@ const RoadmapSection = () => {
           <RoadmapItem
             title="DOB Minter Launch"
             date="May 2025"
-            description="Release of our DOB Minter, an advanced platform for creating Digital Objects on Nervos Network, providing a superior alternative to traditional NFTs."
+            description="Planning a community tool for creating Digital Objects (DOBs) on Nervos Network, making it easier for everyone to use this NFT alternative."
             status="upcoming"
             iconColor="bg-[#784DFD]"
             icon="ph-clock"
@@ -109,7 +109,7 @@ const RoadmapSection = () => {
           <RoadmapItem
             title="Future Developments"
             date="2026 & Beyond"
-            description="Continued development and launch of pipeline projects, further expanding our suite of tools and applications for the Nervos Network ecosystem."
+            description="Exploring more ideas for helpful community tools based on feedback from Nervos users. We're enthusiasts learning and contributing as we go."
             status="future"
             iconColor="bg-white/20"
             icon="ph-dots-three-outline"
