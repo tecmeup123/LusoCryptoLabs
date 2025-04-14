@@ -13,7 +13,7 @@ const OverviewCard = ({
 }) => {
   return (
     <motion.div 
-      className="bg-[#0A1128] p-8 rounded-2xl border border-white/10 hover:border-[#00FFFF]/50 transition-all duration-300 shadow-lg shadow-[#060D20]/50"
+      className="bg-black p-8 rounded-2xl border border-white/10 hover:border-[#ff1a1a]/50 transition-all duration-300 shadow-lg shadow-black/50"
       whileHover={{ y: -5, transition: { duration: 0.2 } }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -21,8 +21,8 @@ const OverviewCard = ({
       transition={{ duration: 0.5 }}
     >
       <div className="flex justify-center mb-6">
-        <div className={`w-16 h-16 flex items-center justify-center bg-[#152747] rounded-full`}>
-          <i className={`ph ${icon} text-3xl ${iconColor}`}></i>
+        <div className={`w-16 h-16 flex items-center justify-center bg-black border border-[#ff1a1a]/30 rounded-full`}>
+          <i className={`ph ${icon} text-3xl text-[#ff1a1a]`}></i>
         </div>
       </div>
       <h3 className="font-['Orbitron'] text-xl font-bold text-center mb-4">{title}</h3>
@@ -33,7 +33,7 @@ const OverviewCard = ({
 
 const OverviewSection = () => {
   return (
-    <section id="overview" className="py-20 bg-[#152747]">
+    <section id="overview" className="py-20 bg-[#0f0f0f]">
       <div className="container mx-auto px-4">
         <motion.div 
           className="max-w-4xl mx-auto text-center mb-16"
@@ -43,7 +43,7 @@ const OverviewSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Who We Are</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#ff1a1a] to-[#ff5252] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 leading-relaxed">
             LusocryptoLabs is a team of passionate individuals creating tools and activities to support the Nervos Network. Our goal is to help grow the Nervos ecosystem through simple community tools and engaging initiatives.
           </p>
