@@ -17,7 +17,7 @@ const Home = () => {
       if (anchor) {
         e.preventDefault();
         const targetId = anchor.getAttribute('href');
-        if (targetId) {
+        if (targetId && targetId !== '#') {
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
             window.scrollTo({

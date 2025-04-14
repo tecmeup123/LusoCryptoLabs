@@ -12,17 +12,8 @@ const Footer = () => {
             <p className="text-gray-400">Advancing the Nervos Network Ecosystem</p>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-[#00FFFF] transition-colors">
-              <i className="ph ph-twitter-logo text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#00FFFF] transition-colors">
-              <i className="ph ph-github-logo text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#00FFFF] transition-colors">
+            <a href="https://t.me/telmotalks" className="text-gray-400 hover:text-[#00FFFF] transition-colors">
               <i className="ph ph-telegram-logo text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-[#00FFFF] transition-colors">
-              <i className="ph ph-discord-logo text-2xl"></i>
             </a>
           </div>
         </div>

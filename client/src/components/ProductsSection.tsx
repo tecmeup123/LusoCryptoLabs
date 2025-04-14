@@ -131,7 +131,7 @@ const ProductsSection = () => {
             statusBgColor="bg-[#3CC68A]/10"
             statusTextColor="text-[#3CC68A]"
             actionText="Join Community"
-            actionLink="#"
+            actionLink="https://t.me/telmotalks"
           />
           
           <ProductCard
