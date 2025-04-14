@@ -45,7 +45,7 @@ const OverviewSection = () => {
           <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Who We Are</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 leading-relaxed">
-            LusocryptoLabs is a team of three passionate enthusiasts creating tools and activities to support the Nervos Network. Our goal is to help grow the Nervos ecosystem through simple community tools and engaging initiatives.
+            LusocryptoLabs is a team of passionate individuals creating tools and activities to support the Nervos Network. Our goal is to help grow the Nervos ecosystem through simple community tools and engaging initiatives.
           </p>
         </motion.div>
 

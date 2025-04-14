@@ -161,7 +161,7 @@ const ProductsSection = () => {
         >
           <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Future Plans</h3>
           <p className="text-gray-300">
-            Our small team is working on more helpful community tools to support the Nervos Network ecosystem. Stay tuned for updates on new projects we're creating as enthusiasts.
+            We're working on more helpful community tools to support the Nervos Network ecosystem. Stay tuned for updates on new projects we're creating as enthusiasts.
           </p>
         </motion.div>
       </div>
