@@ -35,7 +35,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 z-10 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-3xl mx-auto text-center">
           <motion.div 
             className="space-y-8"
             initial={{ opacity: 0, y: 30 }}
@@ -62,39 +62,6 @@ const HeroSection = () => {
                 Explore Our Products
               </motion.a>
             </div>
-          </motion.div>
-
-          <motion.div 
-            className="relative hidden lg:block"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            <motion.div 
-              className="relative"
-              animate={{ y: [-20, 0, -20] }}
-              transition={{ 
-                duration: 6, 
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#784DFD] to-[#00FFFF] opacity-20 blur-xl rounded-full"></div>
-              <div className="relative p-6 backdrop-blur-sm bg-[#152747] bg-opacity-50 rounded-2xl border border-white/10 before:absolute before:inset-[-2px] before:bg-gradient-to-r before:from-[#00FFFF] before:to-[#784DFD] before:rounded-2xl before:-z-10">
-                <div className="flex items-center justify-center h-full">
-                  <img 
-                    src="/nervos-icon.svg" 
-                    alt="Nervos Network" 
-                    className="w-64 h-64 object-contain opacity-80"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.onerror = null;
-                      target.src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxMjgiIHI9IjEyMCIgZmlsbD0iIzE1Mjc0NyIgLz48cGF0aCBkPSJNMTI4LDY0LDE2NC43LDEyOCwxMjgsMTkyLDkxLjMsMTI4WiIgZmlsbD0iIzAwRkZGRiIgLz48L3N2Zz4=";
-                    }}
-                  />
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
