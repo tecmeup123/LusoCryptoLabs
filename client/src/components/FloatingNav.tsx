@@ -30,8 +30,8 @@ const generateParticles = (count: number): FloatingParticle[] => {
   }));
 };
 
-// Random floating particles for visual effect
-const particles = generateParticles(6);
+// Random floating particles for visual effect - disabled
+const particles: FloatingParticle[] = [];
 
 const FloatingNav = () => {
   const [activeSection, setActiveSection] = useState('hero');
