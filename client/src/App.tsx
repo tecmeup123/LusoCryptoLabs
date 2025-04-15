@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import BackToTopButton from "./components/BackToTopButton";
+import FloatingNav from "./components/FloatingNav";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router />
       <BackToTopButton />
+      <FloatingNav />
       <Toaster />
     </QueryClientProvider>
   );
