@@ -20,7 +20,7 @@ const CTASection = () => {
               Try out our simple community tools and be part of the growing Nervos ecosystem with us.
             </p>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              Looking for similar products with your own branding? <a href="mailto:contact@lusocryptolabs.xyz" className="text-[#00FFFF] hover:underline">Contact us</a> to discuss custom solutions.
+              Looking for similar products with your own branding? <a href="https://t.me/telmotalks" target="_blank" rel="noopener noreferrer" className="text-[#00FFFF] hover:underline">Contact us</a> to discuss custom solutions.
             </p>
             <motion.a
               href="https://dapp.sitaminter.xyz"

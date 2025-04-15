@@ -159,9 +159,22 @@ const ProductsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Future Plans</h3>
+          <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">What's Next: Our Big Dreams</h3>
           <p className="text-gray-300">
-            We're working on more helpful community tools to support the Nervos Network ecosystem. Stay tuned for updates on new projects we're creating as enthusiasts.
+            We're cooking up some dope community tools to level up the Nervos Network vibe. Keep your eyes peeled for fresh projects dropping from us fans! 😎
+          </p>
+        </motion.div>
+        <motion.div 
+          className="mt-16 bg-[#152747]/50 rounded-2xl p-8 border border-white/10"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">Open Collaboration</h3>
+          <p className="text-gray-300">
+            We're always down to team up with anyone who's excited about making Nervos Network awesome! Got ideas or skills? 
+            <a href="https://t.me/telmotalks" className="text-[#00FFFF] hover:underline ml-1">Hit us up</a> and let's build something epic together!
           </p>
         </motion.div>
       </div>

@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-white/10 text-center text-gray-400">
           <p className="mb-2">&copy; 2025 LusocryptoLabs. All rights reserved.</p>
           <p className="text-sm">
-            <a href="mailto:contact@lusocryptolabs.xyz" className="text-gray-400 hover:text-[#00FFFF] transition-colors">Contact us</a> for custom-branded solutions.
+            <a href="https://t.me/telmotalks" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#00FFFF] transition-colors">Contact us</a> for custom-branded solutions.
           </p>
         </div>
       </div>
