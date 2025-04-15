@@ -60,9 +60,9 @@ const Header = () => {
         {/* Logo */}
         <a href="#hero" className="flex items-center" onClick={() => setMobileMenuOpen(false)}>
           <h1 className="font-['Orbitron'] font-bold text-xl md:text-3xl">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#784DFD]">Luso</span>
-            <span className="text-white">crypto</span>
-            <span className="text-[#3CC68A]">Labs</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#784DFD]">SiTa</span>
+            <span className="text-white"> by </span>
+            <span className="text-[#3CC68A]">LusoCryptoLabs</span>
           </h1>
         </a>
 

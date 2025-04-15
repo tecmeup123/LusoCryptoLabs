@@ -139,10 +139,20 @@ const HeroSection = () => {
               </motion.div>
             </motion.h1>
             <motion.p 
-              className="text-lg sm:text-xl md:text-2xl text-gray-300 px-2"
+              className="font-['Orbitron'] font-bold text-xl sm:text-2xl md:text-3xl px-2 mb-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.9 }}
+            >
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#784DFD]">SiTa</span>
+              <span className="text-white"> by </span>
+              <span className="text-[#3CC68A]">LusoCryptoLabs</span>
+            </motion.p>
+            <motion.p 
+              className="text-lg sm:text-xl md:text-2xl text-gray-300 px-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
             >
               Enthusiasts creating community tools to support and promote the growth of Nervos Network.
             </motion.p>
