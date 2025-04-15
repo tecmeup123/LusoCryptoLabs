@@ -8,6 +8,59 @@
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased bg-[#0A1128] text-foreground;
+    cursor: none;
   }
+}
+
+/* Custom cursor */
+.cursor-dot,
+.cursor-outline {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #00FFFF;
+  mix-blend-mode: difference;
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(120, 77, 253, 0.5);
+  transition: all 0.2s ease-out;
+}
+
+/* Hide cursor when outside viewport */
+.cursor-hidden .cursor-dot,
+.cursor-hidden .cursor-outline {
+  opacity: 0;
+}
+
+/* Interactive elements cursor style */
+a, button, input, select, textarea, [role="button"] {
+  cursor: none !important;
+}
+
+a:hover ~ .cursor-dot,
+button:hover ~ .cursor-dot,
+[role="button"]:hover ~ .cursor-dot {
+  transform: translate(-50%, -50%) scale(2);
+  background-color: #784DFD;
+}
+
+a:hover ~ .cursor-outline,
+button:hover ~ .cursor-outline,
+[role="button"]:hover ~ .cursor-outline {
+  transform: translate(-50%, -50%) scale(1.5);
+  border-color: rgba(0, 255, 255, 0.5);
 }

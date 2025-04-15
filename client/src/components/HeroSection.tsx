@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ParticleBackground from "./ParticleBackground";
 
 const HeroSection = () => {
   return (
@@ -7,6 +8,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[#0A1128] opacity-90"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A1128] via-[#152747] to-[#0A1128] opacity-80"></div>
+        
+        {/* Particle background */}
+        <ParticleBackground />
         
         {/* Main background blobs */}
         <motion.div 
