@@ -38,7 +38,12 @@ const ProductCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.5 }}
-      whileHover={{ y: -5, transition: { duration: 0.2 } }}
+      whileHover={{ 
+        y: -8, 
+        boxShadow: "0 25px 50px -12px rgba(0, 255, 255, 0.15)",
+        borderColor: "rgba(0, 255, 255, 0.5)",
+        transition: { duration: 0.3, type: "spring", stiffness: 300 } 
+      }}
     >
       <div className={`h-48 bg-gradient-to-br from-${gradientFrom}/20 to-${gradientTo}/20 relative`}>
         <div className="absolute inset-0 flex items-center justify-center">
@@ -59,25 +64,29 @@ const ProductCard = ({
             {actionText}
           </button>
         ) : status === 'active' ? (
-          <a 
+          <motion.a 
             href={actionLink} 
             target="_blank" 
             rel="noopener noreferrer"
             className="block w-full py-3 text-center bg-[#3CC68A] text-[#0A1128] font-medium rounded-lg hover:bg-[#2A9D6A] transition-colors duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             {actionText}
-          </a>
+          </motion.a>
         ) : (
-          <a 
+          <motion.a 
             href={actionLink} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="block w-full py-3 gradient-border rounded-lg"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <div className="bg-[#060D20] hover:bg-[#152747] transition-colors duration-300 text-center py-3 px-6 rounded-lg font-medium">
               {actionText}
             </div>
-          </a>
+          </motion.a>
         )}
       </div>
     </motion.div>
