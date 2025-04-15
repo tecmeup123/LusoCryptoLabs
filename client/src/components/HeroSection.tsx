@@ -99,15 +99,6 @@ const HeroSection = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                style={{ backgroundSize: "200% 100%" }}
-                animate={{
-                  backgroundPosition: ["0% 0%", "100% 0%", "0% 0%"],
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
               >
                 Nervos Network
               </motion.span>{" "}
@@ -119,19 +110,29 @@ const HeroSection = () => {
                 Ecosystem
               </motion.span>
             </motion.h1>
-            <p className="text-xl md:text-2xl text-gray-300">
+            <motion.p 
+              className="text-xl md:text-2xl text-gray-300"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+            >
               Enthusiasts creating community tools to support and promote the growth of Nervos Network.
-            </p>
-            <div className="pt-4">
+            </motion.p>
+            <motion.div 
+              className="pt-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+            >
               <motion.a 
                 href="#products"
                 className="inline-block px-8 py-4 bg-[#152747] border-2 border-[#00FFFF] rounded-lg font-medium text-[#00FFFF] hover:bg-[#00FFFF] hover:text-[#0A1128] transition-all duration-300 shadow-lg shadow-[#00FFFF]/20"
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(0, 255, 255, 0.5)" }}
                 whileTap={{ scale: 0.98 }}
               >
                 Explore Our Epic Gear
               </motion.a>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
