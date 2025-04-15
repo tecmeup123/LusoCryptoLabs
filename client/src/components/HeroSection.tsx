@@ -81,14 +81,17 @@ const HeroSection = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-[#784DFD] to-[#00FFFF] opacity-20 blur-xl rounded-full"></div>
               <div className="relative p-6 backdrop-blur-sm bg-[#152747] bg-opacity-50 rounded-2xl border border-white/10 before:absolute before:inset-[-2px] before:bg-gradient-to-r before:from-[#00FFFF] before:to-[#784DFD] before:rounded-2xl before:-z-10">
-                <div className="text-center p-8">
-                  <div className="inline-block p-4 bg-[#060D20] rounded-full mb-6">
-                    <i className="ph ph-rocket-launch text-5xl text-[#3CC68A]"></i>
-                  </div>
-                  <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">LusocryptoLabs</h3>
-                  <p className="text-gray-300">
-                    Building tools with passion for the Nervos Network community.
-                  </p>
+                <div className="flex items-center justify-center h-full">
+                  <img 
+                    src="/nervos-icon.svg" 
+                    alt="Nervos Network" 
+                    className="w-64 h-64 object-contain opacity-80"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.onerror = null;
+                      target.src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxMjgiIHI9IjEyMCIgZmlsbD0iIzE1Mjc0NyIgLz48cGF0aCBkPSJNMTI4LDY0LDE2NC43LDEyOCwxMjgsMTkyLDkxLjMsMTI4WiIgZmlsbD0iIzAwRkZGRiIgLz48L3N2Zz4=";
+                    }}
+                  />
                 </div>
               </div>
             </motion.div>

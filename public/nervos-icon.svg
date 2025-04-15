@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="nervos-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="100%" stop-color="#784DFD" />
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="120" fill="#152747" />
+  <path d="M128,64 L164.7,128 L128,192 L91.3,128 Z" fill="url(#nervos-gradient)" />
+</svg>
