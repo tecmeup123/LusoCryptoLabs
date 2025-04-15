@@ -9,7 +9,6 @@
 
   body {
     @apply font-sans antialiased bg-[#0A1128] text-foreground;
-    cursor: none;
   }
 }
 
@@ -46,21 +45,4 @@
   opacity: 0;
 }
 
-/* Interactive elements cursor style */
-a, button, input, select, textarea, [role="button"] {
-  cursor: none !important;
-}
-
-a:hover ~ .cursor-dot,
-button:hover ~ .cursor-dot,
-[role="button"]:hover ~ .cursor-dot {
-  transform: translate(-50%, -50%) scale(2);
-  background-color: #784DFD;
-}
-
-a:hover ~ .cursor-outline,
-button:hover ~ .cursor-outline,
-[role="button"]:hover ~ .cursor-outline {
-  transform: translate(-50%, -50%) scale(1.5);
-  border-color: rgba(0, 255, 255, 0.5);
-}
+/* Interactive elements cursor style - removed to use normal cursor */

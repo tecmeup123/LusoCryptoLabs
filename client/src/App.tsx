@@ -9,7 +9,6 @@ import BackToTopButton from "./components/BackToTopButton";
 import FloatingNav from "./components/FloatingNav";
 import LoadingScreen from "./components/LoadingScreen";
 import CookieConsent from "./components/CookieConsent";
-import CustomCursor from "./components/CustomCursor";
 import PageTransition from "./components/PageTransition";
 
 function Router() {
@@ -42,7 +41,6 @@ function App() {
       <BackToTopButton />
       <FloatingNav />
       <CookieConsent />
-      <CustomCursor />
       <Toaster />
     </QueryClientProvider>
   );
