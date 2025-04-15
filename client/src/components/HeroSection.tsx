@@ -145,8 +145,8 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.9 }}
             >
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#784DFD]">SiTa</span>
-              <span className="text-white"> by </span>
-              <span className="text-[#3CC68A]">LusoCryptoLabs</span>
+              <span className="text-white text-xs sm:text-sm align-text-top"> by </span>
+              <span className="text-[#3CC68A] text-xs sm:text-sm align-text-top">LusoCryptoLabs</span>
             </motion.p>
             <motion.p 
               className="text-lg sm:text-xl md:text-2xl text-gray-300 px-2"

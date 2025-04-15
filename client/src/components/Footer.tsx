@@ -36,8 +36,8 @@ const Footer = () => {
           >
             <h2 className="font-['Orbitron'] font-bold text-2xl mb-4 text-center md:text-left">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#784DFD]">SiTa</span>
-              <span className="text-white"> by </span>
-              <span className="text-[#3CC68A]">LusoCryptoLabs</span>
+              <span className="text-white text-xs align-text-top"> by </span>
+              <span className="text-[#3CC68A] text-xs align-text-top">LusoCryptoLabs</span>
             </h2>
             <p className="text-gray-400 mb-4 text-center md:text-left">
               Community-made tools and vibes to level up the Nervos Network ecosystem! 🎮 Built by fans, for fans!
@@ -150,7 +150,7 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <p className="mb-2">&copy; 2025 SiTa by LusoCryptoLabs. All rights reserved.</p>
+          <p className="mb-2">&copy; 2025 SiTa <span className="text-xs">by LusoCryptoLabs</span>. All rights reserved.</p>
           <p className="text-sm">
             <a href="https://t.me/telmotalks" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#00FFFF] transition-colors">Contact us</a> for custom-branded solutions. Built with 💙 for Nervos Network.
           </p>
