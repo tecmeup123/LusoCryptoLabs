@@ -122,13 +122,13 @@ const ProductsSection = () => {
             icon="ph-coins"
             title="Token Minter dApp"
             description="A simple web tool that lets anyone create their own custom tokens on Nervos Network using JoyID or UTXO Global wallets. Uses RGB++ standard and supports multiple languages for the community."
-            status="coming-soon"
-            statusText="Coming Soon"
-            gradientFrom="[#00FFFF]"
+            status="active"
+            statusText="Active"
+            gradientFrom="[#3CC68A]"
             gradientTo="[#784DFD]"
-            iconColor="text-[#00FFFF]"
-            statusBgColor="bg-[#00FFFF]/10"
-            statusTextColor="text-[#00FFFF]"
+            iconColor="text-[#3CC68A]"
+            statusBgColor="bg-[#3CC68A]/10"
+            statusTextColor="text-[#3CC68A]"
             actionText="Visit Token Minter"
             actionLink="https://dapp.sitaminter.xyz"
           />
@@ -151,7 +151,7 @@ const ProductsSection = () => {
           <ProductCard
             icon="ph-cube"
             title="DOB Minter"
-            description="A fan project in progress to simplify minting Digital Objects (DOBs), Nervos' alternative to NFTs, making it accessible to more users."
+            description="Currently developing a fan project to simplify minting Digital Objects (DOBs), Nervos' alternative to NFTs, making it accessible to more users with an intuitive interface."
             status="in-development"
             statusText="In Development"
             gradientFrom="[#784DFD]"
@@ -159,7 +159,7 @@ const ProductsSection = () => {
             iconColor="text-[#784DFD]"
             statusBgColor="bg-[#784DFD]/10"
             statusTextColor="text-[#784DFD]"
-            actionText="Coming May 2025"
+            actionText="Coming Q2 2025"
             isDisabled={true}
           />
         </div>
@@ -171,9 +171,9 @@ const ProductsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">What's Next: Our Big Dreams</h3>
+          <h3 className="font-['Orbitron'] text-2xl font-bold mb-4">What's Next: Q3 2025 & Beyond</h3>
           <p className="text-gray-300">
-            We're cooking up some dope community tools to level up the Nervos Network vibe. Keep your eyes peeled for fresh projects dropping from us fans! 😎
+            We're cooking up some dope community tools to level up the Nervos Network vibe. Keep your eyes peeled for fresh projects dropping from us fans after we complete the DOB Minter! 😎
           </p>
         </motion.div>
         <motion.div 

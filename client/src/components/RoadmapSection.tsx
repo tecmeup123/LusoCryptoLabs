@@ -128,33 +128,33 @@ const RoadmapSection = () => {
             
             <RoadmapItem
               title="Token Minter dApp Launch"
-              date="April 2025"
-              description="Working on a simple tool to help community members create tokens on Nervos Network with a friendly interface anyone can use."
-              status="in-progress"
-              iconColor="bg-[#00FFFF]"
-              icon="ph-hourglass"
-              dateBgColor="bg-[#00FFFF]/10"
-              dateTextColor="text-[#00FFFF]"
+              date="Q2 2025 - Completed"
+              description="Built a simple tool to help community members create tokens on Nervos Network with a friendly interface anyone can use."
+              status="completed"
+              iconColor="bg-[#3CC68A]"
+              icon="ph-check-bold"
+              dateBgColor="bg-[#3CC68A]/10"
+              dateTextColor="text-[#3CC68A]"
               index={1}
               isMobile={isMobile}
             />
             
             <RoadmapItem
               title="DOB Minter Launch"
-              date="May 2025"
-              description="Planning a community tool for creating Digital Objects (DOBs) on Nervos Network, making it easier for everyone to use this NFT alternative."
-              status="upcoming"
-              iconColor="bg-[#784DFD]"
-              icon="ph-clock"
-              dateBgColor="bg-[#784DFD]/10"
-              dateTextColor="text-[#784DFD]"
+              date="Q2 2025 - In Progress"
+              description="Currently developing a community tool for creating Digital Objects (DOBs) on Nervos Network, making it easier for everyone to use this NFT alternative."
+              status="in-progress"
+              iconColor="bg-[#00FFFF]"
+              icon="ph-hourglass"
+              dateBgColor="bg-[#00FFFF]/10"
+              dateTextColor="text-[#00FFFF]"
               index={2}
               isMobile={isMobile}
             />
             
             <RoadmapItem
               title="Future Developments"
-              date="2026 & Beyond"
+              date="Q3 2025 & Beyond"
               description="Exploring more ideas for helpful community tools based on feedback from Nervos users. We're enthusiasts learning and contributing as we go."
               status="future"
               iconColor="bg-white/20"
