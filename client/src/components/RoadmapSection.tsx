@@ -10,6 +10,7 @@ interface RoadmapItemProps {
   dateBgColor: string;
   dateTextColor: string;
   index: number;
+  isLast?: boolean;
 }
 
 const RoadmapItem = ({
@@ -22,31 +23,37 @@ const RoadmapItem = ({
   dateBgColor,
   dateTextColor,
   index,
+  isLast = false,
 }: RoadmapItemProps) => {
+  const isEven = index % 2 === 0;
+  
   return (
     <motion.div 
-      className="flex-1 min-w-[280px]"
+      className={`flex relative ${isEven ? 'flex-row' : 'flex-row-reverse'} items-center mb-20 last:mb-0`}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="relative">
-        <div className={`w-10 h-10 rounded-full ${iconColor} flex items-center justify-center mx-auto mb-4 z-10`}>
-          <i className={`ph ${icon} text-xl text-[#060D20]`}></i>
-        </div>
-        {index < 3 && (
-          <div className="absolute top-5 left-1/2 w-full h-1 bg-gradient-to-r from-transparent via-[#784DFD] to-transparent"></div>
-        )}
+      {/* Line connector */}
+      {!isLast && (
+        <div className="absolute h-full w-1 bg-gradient-to-b from-[#00FFFF] to-[#784DFD] top-12 left-[19px] -z-10"></div>
+      )}
+      
+      {/* Icon */}
+      <div className={`w-10 h-10 rounded-full ${iconColor} flex-shrink-0 flex items-center justify-center z-10`}>
+        <i className={`ph ${icon} text-xl text-[#060D20]`}></i>
       </div>
-      <div className="bg-[#0A1128] rounded-2xl p-6 border border-white/10 h-full">
-        <div className="text-center mb-4">
-          <h3 className="font-['Orbitron'] text-lg font-bold mb-2">{title}</h3>
-          <span className={`px-4 py-1 ${dateBgColor} ${dateTextColor} rounded-full text-sm inline-block`}>
+      
+      {/* Content */}
+      <div className={`mx-6 max-w-xl ${isEven ? 'ml-6' : 'mr-6'}`}>
+        <div className="flex items-center mb-2">
+          <h3 className="font-['Orbitron'] text-xl font-bold mr-3">{title}</h3>
+          <span className={`px-4 py-1 ${dateBgColor} ${dateTextColor} rounded-full text-sm`}>
             {date}
           </span>
         </div>
-        <p className="text-gray-300 text-sm">{description}</p>
+        <p className="text-gray-300">{description}</p>
       </div>
     </motion.div>
   );
@@ -72,8 +79,8 @@ const RoadmapSection = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto mt-16 relative">
-          <div className="flex flex-col md:flex-row gap-6 overflow-x-auto pb-4">
+        <div className="max-w-2xl mx-auto mt-16 relative">
+          <div className="ml-5 pl-4 border-l-4 border-[#00FFFF]/30">
             <RoadmapItem
               title="Gamified Bot in Telmo Talks"
               date="Q3 2025 - Completed"
@@ -120,6 +127,7 @@ const RoadmapSection = () => {
               dateBgColor="bg-white/10"
               dateTextColor="text-white"
               index={3}
+              isLast={true}
             />
           </div>
         </div>

@@ -59,7 +59,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Explore Our Products
+                Explore Our Epic Gear
               </motion.a>
             </div>
           </motion.div>

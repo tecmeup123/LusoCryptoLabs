@@ -98,7 +98,7 @@ const ProductsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Our Products</h2>
+          <h2 className="font-['Orbitron'] font-bold text-3xl md:text-4xl mb-6">Our Epic Gear</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] to-[#784DFD] mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Community-made tools designed to help the Nervos Network ecosystem grow
