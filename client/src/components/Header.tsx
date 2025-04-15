@@ -178,20 +178,12 @@ const Header = () => {
                     <i className="ph ph-telegram-logo text-2xl"></i>
                   </a>
                   <a 
-                    href="https://t.me/telmotalks" 
+                    href="https://x.com/SiTaMinter" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-[#152747] rounded-full hover:bg-[#00FFFF]/20 transition-colors"
                   >
                     <i className="ph ph-twitter-logo text-2xl"></i>
-                  </a>
-                  <a 
-                    href="https://t.me/telmotalks" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-3 bg-[#152747] rounded-full hover:bg-[#00FFFF]/20 transition-colors"
-                  >
-                    <i className="ph ph-github-logo text-2xl"></i>
                   </a>
                 </div>
               </motion.div>

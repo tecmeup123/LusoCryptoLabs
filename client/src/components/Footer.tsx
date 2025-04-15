@@ -54,17 +54,7 @@ const Footer = () => {
                 <i className="ph ph-telegram-logo text-2xl"></i>
               </motion.a>
               <motion.a 
-                href="https://github.com/nervosnetwork"
-                target="_blank"
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-[#00FFFF] transition-all"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <i className="ph ph-github-logo text-2xl"></i>
-              </motion.a>
-              <motion.a 
-                href="https://twitter.com/NervosNetwork"
+                href="https://x.com/SiTaMinter"
                 target="_blank"
                 rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-[#00FFFF] transition-all"
