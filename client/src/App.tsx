@@ -6,6 +6,8 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import BackToTopButton from "./components/BackToTopButton";
 import FloatingNav from "./components/FloatingNav";
+import LoadingScreen from "./components/LoadingScreen";
+import CookieConsent from "./components/CookieConsent";
 
 function Router() {
   return (
@@ -20,9 +22,11 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <LoadingScreen />
       <Router />
       <BackToTopButton />
       <FloatingNav />
+      <CookieConsent />
       <Toaster />
     </QueryClientProvider>
   );

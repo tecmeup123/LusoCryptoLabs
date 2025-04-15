@@ -54,7 +54,12 @@ const OverviewCard = ({
       
       <motion.h3 
         className="font-['Orbitron'] text-2xl font-bold text-center mb-4 relative z-10"
-        whileHover={{ scale: 1.05, color: iconColor.split('text-')[1] }}
+        whileHover={{ 
+          scale: 1.05, 
+          color: iconColor.includes('#00FFFF') ? '#00FFFF' : 
+                 iconColor.includes('#3CC68A') ? '#3CC68A' : 
+                 '#784DFD'
+        }}
         transition={{ type: "spring", stiffness: 300 }}
       >
         {title}
