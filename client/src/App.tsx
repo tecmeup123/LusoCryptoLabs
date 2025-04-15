@@ -6,7 +6,6 @@ import { AnimatePresence } from "framer-motion";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import BackToTopButton from "./components/BackToTopButton";
-import FloatingNav from "./components/FloatingNav";
 import LoadingScreen from "./components/LoadingScreen";
 import CookieConsent from "./components/CookieConsent";
 import PageTransition from "./components/PageTransition";
@@ -39,7 +38,6 @@ function App() {
       <LoadingScreen />
       <Router />
       <BackToTopButton />
-      <FloatingNav />
       <CookieConsent />
       <Toaster />
     </QueryClientProvider>

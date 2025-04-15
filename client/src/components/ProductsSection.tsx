@@ -33,11 +33,12 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <motion.div 
-      className="bg-[#152747] rounded-2xl overflow-hidden border border-white/10 hover:border-[#00FFFF]/30 transition-all duration-300 shadow-xl"
+      className="bg-[#152747] rounded-2xl overflow-hidden border border-white/10 hover:border-[#00FFFF]/30 transition-all duration-300 shadow-xl h-full flex flex-col"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.5 }}
+      whileTap={{ scale: 0.98 }}
       whileHover={{ 
         y: -8, 
         boxShadow: "0 25px 50px -12px rgba(0, 255, 255, 0.15)",
@@ -45,49 +46,51 @@ const ProductCard = ({
         transition: { duration: 0.3, type: "spring", stiffness: 300 } 
       }}
     >
-      <div className={`h-48 bg-gradient-to-br from-${gradientFrom}/20 to-${gradientTo}/20 relative`}>
+      <div className={`h-32 sm:h-48 bg-gradient-to-br from-${gradientFrom}/20 to-${gradientTo}/20 relative`}>
         <div className="absolute inset-0 flex items-center justify-center">
-          <i className={`ph ${icon} text-6xl ${iconColor}`}></i>
+          <i className={`ph ${icon} text-5xl sm:text-6xl ${iconColor}`}></i>
         </div>
       </div>
-      <div className="p-8">
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="font-['Orbitron'] text-2xl font-bold">{title}</h3>
-          <span className={`px-3 py-1 ${statusBgColor} ${statusTextColor} text-xs font-bold rounded-full`}>
+      <div className="p-5 sm:p-8 flex-grow flex flex-col">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-4">
+          <h3 className="font-['Orbitron'] text-xl sm:text-2xl font-bold">{title}</h3>
+          <span className={`px-3 py-1 ${statusBgColor} ${statusTextColor} text-xs font-bold rounded-full self-start sm:self-auto`}>
             {statusText}
           </span>
         </div>
-        <p className="text-gray-300 mb-6">{description}</p>
+        <p className="text-gray-300 mb-6 text-sm sm:text-base flex-grow">{description}</p>
         
-        {isDisabled ? (
-          <button disabled className="block w-full py-3 text-center bg-gray-700 text-gray-400 font-medium rounded-lg cursor-not-allowed">
-            {actionText}
-          </button>
-        ) : status === 'active' ? (
-          <motion.a 
-            href={actionLink} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="block w-full py-3 text-center bg-[#3CC68A] text-[#0A1128] font-medium rounded-lg hover:bg-[#2A9D6A] transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {actionText}
-          </motion.a>
-        ) : (
-          <motion.a 
-            href={actionLink} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="block w-full py-3 gradient-border rounded-lg"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <div className="bg-[#060D20] hover:bg-[#152747] transition-colors duration-300 text-center py-3 px-6 rounded-lg font-medium">
+        <div className="mt-auto">
+          {isDisabled ? (
+            <button disabled className="block w-full py-3 text-center bg-gray-700 text-gray-400 font-medium rounded-lg cursor-not-allowed">
               {actionText}
-            </div>
-          </motion.a>
-        )}
+            </button>
+          ) : status === 'active' ? (
+            <motion.a 
+              href={actionLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block w-full py-3 text-center bg-[#3CC68A] text-[#0A1128] font-medium rounded-lg hover:bg-[#2A9D6A] transition-colors duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {actionText}
+            </motion.a>
+          ) : (
+            <motion.a 
+              href={actionLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block w-full gradient-border rounded-lg"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="bg-[#060D20] hover:bg-[#152747] transition-colors duration-300 text-center py-3 px-6 rounded-lg font-medium">
+                {actionText}
+              </div>
+            </motion.a>
+          )}
+        </div>
       </div>
     </motion.div>
   );
@@ -114,7 +117,7 @@ const ProductsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12">
           <ProductCard
             icon="ph-coins"
             title="Token Minter dApp"

@@ -26,23 +26,23 @@ const Footer = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-8 mb-8">
           <motion.div 
-            className="mb-6 md:mb-0"
+            className="order-1 mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-['Orbitron'] font-bold text-2xl mb-4">
+            <h2 className="font-['Orbitron'] font-bold text-2xl mb-4 text-center md:text-left">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#784DFD]">Luso</span>
               <span className="text-white">crypto</span>
               <span className="text-[#3CC68A]">Labs</span>
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 text-center md:text-left">
               Community-made tools and vibes to level up the Nervos Network ecosystem! 🎮 Built by fans, for fans!
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center md:justify-start space-x-6">
               <motion.a 
                 href="https://t.me/telmotalks" 
                 target="_blank" 
@@ -81,47 +81,39 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-6 md:mb-0"
+            className="order-3 md:order-2 mb-6"
           >
-            <h3 className="font-['Orbitron'] text-xl font-bold mb-4">Navigation</h3>
-            <ul className="space-y-2">
-              <li>
-                <button 
-                  onClick={() => scrollToSection('hero')}
-                  className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group"
-                >
-                  <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  Home
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('overview')}
-                  className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group"
-                >
-                  <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  The Crew
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('products')}
-                  className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group"
-                >
-                  <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  Our Epic Gear
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('roadmap')}
-                  className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group"
-                >
-                  <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                  Roadmap
-                </button>
-              </li>
-            </ul>
+            <h3 className="font-['Orbitron'] text-xl font-bold mb-4 text-center md:text-left">Navigation</h3>
+            <div className="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-3 md:block md:space-y-3">
+              <button 
+                onClick={() => scrollToSection('hero')}
+                className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group bg-[#152747]/50 px-3 py-1 rounded-full md:bg-transparent md:px-0 md:py-0"
+              >
+                <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity hidden md:inline"></i>
+                Home
+              </button>
+              <button 
+                onClick={() => scrollToSection('overview')}
+                className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group bg-[#152747]/50 px-3 py-1 rounded-full md:bg-transparent md:px-0 md:py-0"
+              >
+                <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity hidden md:inline"></i>
+                The Crew
+              </button>
+              <button 
+                onClick={() => scrollToSection('products')}
+                className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group bg-[#152747]/50 px-3 py-1 rounded-full md:bg-transparent md:px-0 md:py-0"
+              >
+                <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity hidden md:inline"></i>
+                Epic Gear
+              </button>
+              <button 
+                onClick={() => scrollToSection('roadmap')}
+                className="text-gray-400 hover:text-[#00FFFF] transition-colors flex items-center group bg-[#152747]/50 px-3 py-1 rounded-full md:bg-transparent md:px-0 md:py-0"
+              >
+                <i className="ph ph-caret-right mr-2 opacity-0 group-hover:opacity-100 transition-opacity hidden md:inline"></i>
+                Roadmap
+              </button>
+            </div>
           </motion.div>
           
           <motion.div
@@ -129,22 +121,25 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            className="order-2 md:order-3"
           >
-            <h3 className="font-['Orbitron'] text-xl font-bold mb-4">Get in Touch</h3>
-            <p className="text-gray-400 mb-4">
+            <h3 className="font-['Orbitron'] text-xl font-bold mb-4 text-center md:text-left">Get in Touch</h3>
+            <p className="text-gray-400 mb-4 text-center md:text-left">
               Have questions or want to join the community? Hit us up on Telegram! 💬
             </p>
-            <motion.a 
-              href="https://t.me/telmotalks"
-              target="_blank"
-              rel="noopener noreferrer" 
-              className="inline-flex items-center px-4 py-2 bg-[#152747] border border-[#00FFFF]/30 rounded-lg text-[#00FFFF] hover:bg-[#00FFFF]/10 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <i className="ph ph-telegram-logo mr-2"></i>
-              Join Community
-            </motion.a>
+            <div className="flex justify-center md:justify-start">
+              <motion.a 
+                href="https://t.me/telmotalks"
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="inline-flex items-center px-4 py-2 bg-[#152747] border border-[#00FFFF]/30 rounded-lg text-[#00FFFF] hover:bg-[#00FFFF]/10 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <i className="ph ph-telegram-logo mr-2"></i>
+                Join Community
+              </motion.a>
+            </div>
           </motion.div>
         </div>
         
